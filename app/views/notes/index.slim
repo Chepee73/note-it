@@ -1,0 +1,12 @@
+doctype html
+html
+  head
+      title NoTe IT
+  body
+      h1 YouR NoteS
+          =@notes.each do |note|
+              div class="note"
+                p note.title
+                p note.content
+                p note.created
+          end
